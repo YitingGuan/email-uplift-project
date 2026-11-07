@@ -1,0 +1,16 @@
+{
+  "seed": 20261107,
+  "control": "No E-Mail",
+  "model_treatment": "Mens E-Mail",
+  "primary_outcome": "visit",
+  "secondary_outcomes": ["conversion", "spend"],
+  "train_fraction": 0.6,
+  "validation_fraction": 0.2,
+  "test_fraction": 0.2,
+  "target_fraction": 0.3,
+  "assignment_probability_pair": 0.5,
+  "bootstrap_replicates": 1500,
+  "model_candidates": ["s_hgb", "t_logistic", "t_hgb", "x_hgb"],
+  "selection_metric": "validation_ipw_gain_at_30pct",
+  "analysis_type": "retrospective public-data analysis; not a registered prospective experiment"
+}
