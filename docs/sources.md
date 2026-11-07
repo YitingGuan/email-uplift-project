@@ -1,7 +1,5 @@
 # 数据与方法来源
 
-查询及下载日期：2026-11-07。
-
 1. Kevin Hillstrom，The MineThatData E-Mail Analytics And Data Mining Challenge，2008。
    https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html
 2. scikit-uplift Hillstrom说明与加载器。数据描述提供三组各三分之一随机分配及两周结果窗；本项目下载同一数据镜像，未复制其实现。
@@ -21,9 +19,3 @@
 8. tea-tasting官方实验统计文档。参考协变量调整、SRM与指标定义的组织方式；主流程使用SciPy和statsmodels独立实现，不把tea-tasting写成已使用的运行依赖。
    https://tea-tasting.e10v.me/user-guide/
    https://github.com/e10v/tea-tasting
-
-## 代码与数据权限分别处理
-
-本项目自行编写的代码使用MIT许可证。未确认原始Hillstrom数据具备可直接套用的MIT或CC许可，故不擅自替其授权。发布包不包含原始数据和逐行预测，只附带下载脚本、来源、摘要校验及聚合结果。下载及后续用途应遵循数据提供者要求。第三方仓库的许可证不自动覆盖外部数据。
-
-这是基于公开随机实验数据的离线回顾性分析，未实施新的线上实验。
