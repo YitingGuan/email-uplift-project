@@ -39,9 +39,6 @@ python -m pip install -r requirements.txt
 python run_all.py
 python -m unittest discover -s tests -v
 ```
-
-首次需要网络下载数据并核验摘要，后续读取本地缓存。无需GPU、API key和数据库账号。发布包不附原始数据及逐行预测，见`docs/sources.md`。所有聚合结果和图已附带，可直接查看。
-
 ## 实际使用的方法与工具
 
 - DuckDB SQL：GROUP BY、CASE WHEN、FILTER、CTE、NTILE窗口汇总。
@@ -55,11 +52,3 @@ python -m unittest discover -s tests -v
 ## 目录与分析流程
 
 `config.json`固定对象、容量与随机种子；`src/download_data.py`下载与校验；`src/run_analysis.py`执行SQL、统计与建模；`src/statistics_tools.py`实现透明估计；`src/uplift_models.py`实现元学习器；`src/build_reports.py`生成图表、报告和HTML；`tests/`包含15项核验。
-
-没有客户ID，所以6,562条完全相同画像不直接去重。所有指标使用原分配记录作为分母，不在处理后访问者中筛选。主实验六项检验进行Holm校正；图上95%区间为边际区间。模型依据验证集30%容量HT增量选择；测试不反向挑选模型。没有日期字段，不能声称时间外推。
-
-## 参考与许可
-
-数据：Kevin Hillstrom，MineThatData Email Analytics Challenge (2008)，通过scikit-uplift公开加载器引用的镜像下载。方法：Künzel等(2019)元学习器、Deng等(2013)CUPED思想及官方方法文档。完整链接见`docs/sources.md`。
-
-自行编写代码为MIT；该许可不覆盖原始数据、第三方方法或库。没有擅自替数据提供者赋予开放许可。
