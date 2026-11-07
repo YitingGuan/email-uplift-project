@@ -1,0 +1,20 @@
+test_duplicate_profiles_retained (test_analysis.ProjectIntegrityTests.test_duplicate_profiles_retained) ... ok
+test_exported_confidence_order (test_analysis.ProjectIntegrityTests.test_exported_confidence_order) ... ok
+test_feature_leakage_guard (test_analysis.ProjectIntegrityTests.test_feature_leakage_guard) ... ok
+test_partition_disjoint_and_complete (test_analysis.ProjectIntegrityTests.test_partition_disjoint_and_complete) ... ok
+test_policy_recomputes_from_private_predictions (test_analysis.ProjectIntegrityTests.test_policy_recomputes_from_private_predictions) ... ok
+test_selected_model_from_validation (test_analysis.ProjectIntegrityTests.test_selected_model_from_validation) ... ok
+test_sql_deciles_partition_test (test_analysis.ProjectIntegrityTests.test_sql_deciles_partition_test) ... ok
+test_sql_totals (test_analysis.ProjectIntegrityTests.test_sql_totals) ... ok
+test_holm_known_example (test_analysis.StatisticalTests.test_holm_known_example) ... ok
+test_ht_balanced_identifies_difference (test_analysis.StatisticalTests.test_ht_balanced_identifies_difference) ... ok
+test_invalid_propensity_rejected (test_analysis.StatisticalTests.test_invalid_propensity_rejected) ... ok
+test_known_ipw_propensity (test_analysis.StatisticalTests.test_known_ipw_propensity) ... ok
+test_paired_bootstrap_identical_policies (test_analysis.StatisticalTests.test_paired_bootstrap_identical_policies) ... ok
+test_policy_never_uses_outcome (test_analysis.StatisticalTests.test_policy_never_uses_outcome) ... ok
+test_welch_matches_scipy (test_analysis.StatisticalTests.test_welch_matches_scipy) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.173s
+
+OK

@@ -1,0 +1,51 @@
+{
+  "selected_model": "t_logistic",
+  "n_pair": 42613,
+  "splits": {
+    "train": 25567,
+    "validation": 8523,
+    "test": 8523
+  },
+  "n_test_treatment": 4261,
+  "n_test_control": 4262,
+  "capacity_fraction": 0.29989440337909185,
+  "seed": 20261107,
+  "selection_metric": "validation_ipw_gain_at_30pct",
+  "bootstrap_note": "Paired record bootstrap holding fitted scores and policy selection fixed; excludes training and cohort cutoff uncertainty",
+  "propensity": 0.5,
+  "test_ate_ipw": {
+    "estimate": 0.09057843482341899,
+    "ci_low": 0.07430005758965395,
+    "ci_high": 0.10685681205718402,
+    "se": 0.008305294507022975
+  },
+  "quality": {
+    "n_records": 64000,
+    "n_columns_source": 12,
+    "missing_cells": 0,
+    "identical_source_rows": 6562,
+    "identity_note": "No customer ID supplied; identical feature/outcome rows retained. record_id is source row position, not verified unique customer ID.",
+    "arm_counts": {
+      "Mens E-Mail": 21307,
+      "No E-Mail": 21306,
+      "Womens E-Mail": 21387
+    },
+    "srm_expected_ratio": [
+      1,
+      1,
+      1
+    ],
+    "srm_chi2": 0.20253125000000002,
+    "srm_p_value": 0.9036929575604196,
+    "source_sha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0",
+    "scipy": "1.17.0",
+    "duckdb": "2.0.0",
+    "statsmodels": "0.15.0"
+  }
+}

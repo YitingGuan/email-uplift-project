@@ -1,0 +1,3 @@
+treatment,outcome,bootstrap_ci_low,bootstrap_ci_high,replicates
+Mens E-Mail,spend,0.4888452938231788,1.0677916689515246,1500
+Womens E-Mail,spend,0.15630199481272278,0.6705500084784778,1500

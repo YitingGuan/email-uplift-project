@@ -1,0 +1,5 @@
+model,test_gain_per_1000,selected_on_validation
+s_hgb,32.617622902733785,False
+t_logistic,36.606828581485395,True
+t_hgb,28.159098908834917,False
+x_hgb,25.1085298603778,False
