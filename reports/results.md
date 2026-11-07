@@ -86,4 +86,4 @@ visit和conversion差值为概率单位，乘100才是百分点；spend差值为
 
 ## 附件
 
-统计细节见docs/methodology.md，面试问答见docs/interview_handbook.md，SQL见sql目录，所有CSV与图表见reports目录。
+统计细节见docs/methodology.md，SQL见sql目录，所有CSV与图表见reports目录。
