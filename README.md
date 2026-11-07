@@ -2,7 +2,7 @@
 
 基于Hillstrom 64,000条公开随机邮件实验记录，完成SQL质量核验、A/B/n效果评估、历史协变量调整、S/T/X增量建模和独立测试策略评估。
 
-**本项目是AI辅助完成的公开数据离线实践，未实施新的线上实验，没有虚构课题组、导师、客户投放或已实现商业收益。** 数据与已有方法均注明来源；个人贡献按实际复现与修改情况描述。
+本项目对已有公开随机实验进行离线回顾性分析。结果用于方法比较与策略评估，不代表新的线上实验或已验证的商业收益。数据与方法来源见 `docs/sources.md`。
 
 ## 核心发现
 
@@ -26,10 +26,9 @@
 ## 从哪里开始
 
 1. `reports/dashboard.html`：浏览器直接打开的自包含展示页。
-2. `docs/interview_handbook.docx`或同名`.md`：项目故事、44个面试问题、简历条目和学习安排。
-3. `reports/results.md`：完整实际结果。
-4. `docs/methodology.md`：公式、假设、评估定义和局限。
-5. `docs/run_guide.md`与`notebooks/walkthrough.ipynb`：运行和逐步理解。
+2. `reports/results.md`：完整实际结果。
+3. `docs/methodology.md`：公式、假设、评估定义和局限。
+4. `docs/run_guide.md`与`notebooks/walkthrough.ipynb`：运行和逐步理解。
 
 ## 一键复现
 
